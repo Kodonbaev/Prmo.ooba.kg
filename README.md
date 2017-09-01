@@ -1,0 +1,1 @@
+# Prmo.ooba.kg
