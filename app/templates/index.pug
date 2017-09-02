@@ -1,0 +1,34 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="apple-touch-icon", sizes="76x76", href="uploads/favicon/apple-touch-icon.png")
+    link(rel="icon", type="image/png", sizes="32x32", href="uploads/favicon/favicon-32x32.png")
+    link(rel="icon", type="image/png", sizes="16x16", href="uploads/favicon/favicon-16x16.png")
+    link(rel="manifest", href="uploads/favicon/manifest.json")
+    link(rel="mask-icon", href="uploads/favicon/safari-pinned-tab.svg", color="#fc6a00")
+    meta(name="theme-color", content="#fc6a00")
+
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic-ext", rel="stylesheet")
+    link(rel="stylesheet", href="css/font-awesome.css")
+    link(rel="stylesheet", href="css/slick.css")
+    link(rel="stylesheet", href="css/slick-theme.css")
+    link(rel="stylesheet", href="css/jquery.bxslider.css")
+    link(rel="stylesheet", href="css/reset.css")
+    link(rel="stylesheet", href="css/style.css")
+    title= title
+  body
+    include _header
+    #fullpage
+        
+        include _info_video
+        include _info_price
+        include _banner
+        include _address-info
+    
+    script(src="vendor/jquery/jquery-3.1.1.min.js")
+    script(src="vendor/jquery.fullPage.js")
+    script(src="vendor/slick/slick.js")
+    script(src="vendor/jquery.bxslider.js")
+    script(src="js/main.js")

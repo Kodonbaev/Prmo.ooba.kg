@@ -1,0 +1,107 @@
+
+.header
+	background: rgba(37, 37, 37, 0.9)
+	@extend %clearfix
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	z-index: 50
+.header-container
+	width: 100%
+	padding: 12px 0
+.logo
+	width: 14% 
+	float: left
+	padding: 4px 0
+	+tablet
+		width: 27%
+	img
+		width: 100%
+		height: auto
+.menu
+	width: 82%
+	float: left
+	margin: 8px 0 15px 43px 
+	&__icon
+		display: none
+		+tablet
+			display: block
+			position: absolute
+			top: 7px
+			right: 11px
+			border: 1px solid #9f9898
+			width: 45px
+			height: 45px
+			border-radius: 3px
+			cursor: pointer
+			background: transparent
+			margin: 7px
+			&:hover
+				background: #969696
+			.fa-bars
+				font-size: 30px
+				color: #fff 
+				padding: 3px 6px
+		+planshet
+			width: 38px
+			height: 38px
+			margin: 4px 11px  
+			&:hover
+				background: #969696
+			.fa-bars
+				font-size: 30px
+				color: #fff 
+				padding: 3px 6px
+	&__nav
+		+tablet
+			position: absolute
+			top: 51px
+			right: 0
+			text-align: center
+			width: 100%
+			border: none
+			border-radius: 3px
+			display: none
+			background: rgba(37,37,37,0.8)
+			-webkit-transition-duration: 0.4s
+			transition-duration: 0.4s
+			z-index: 10
+		+planshet
+			position: absolute
+			top: 51px
+			right: 0
+			text-align: center
+			width: 100%
+			border: none
+			border-radius: 3px
+			display: none
+			background: rgba(37,37,37,0.8)
+			-webkit-transition-duration: 0.4s
+			transition-duration: 0.4s
+			z-index: 10
+		a 
+			display: inline-block
+			color: $color-header
+			font-size: 15px
+			box-sizing: border-box
+			padding: 8px 15px
+			text-decoration: none
+			text-transform: uppercase
+			border-radius: 4px
+			&:hover
+				color: $color-hover
+				background: rgba(0, 0, 0, 0.7)
+				transition: all .3s
+			+tablet
+				width: 100%
+				font-size: 1.1em
+				display: inline-block
+				border: none
+				color: #fff
+				padding: 15px 0 10px
+				&:hover
+					color: $color-hover
+.menu__icon:hover + .menu__nav,
+.menu__nav:hover
+	display: block

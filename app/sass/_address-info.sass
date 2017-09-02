@@ -1,0 +1,192 @@
+.check
+	background: url(../images/bg-regist.png) center center no-repeat
+	background-size: cover
+	text-align: center
+	position: relative
+	z-index: 1
+	margin-top: -50px
+	&__main
+		font-size: 2em
+		margin: 0
+		padding: 150px 0 0
+		font-weight: 500
+		+mobile
+			font-size: 1.7em
+	&__text
+		font-size: 1.5em
+		margin: 0
+		+mobile
+			font-size: 1.3em
+	&__btn
+		padding-top: 80px
+		&--wrap
+			@extend %btn
+			text-decoration: none
+			border-radius: 5px
+			+tablet
+				width: 300px
+				font-size: 1.3em
+			+planshet
+				font-size: 1em
+.issues
+	text-align: center
+	background: #ebebeb
+	padding: 100px 0 29px
+	margin-top: -120px
+	&__main
+		font-size: 2.3em
+		margin: 70px 0 0
+		+planshet
+			font-size: 1.5em
+	&__text
+		font-size: 1.5em
+		margin: 0 0 10px
+		+planshet
+			font-size: 1.3em
+			padding: 15px 0
+.maps
+	position: relative
+	&__address
+		width: 100%
+		height: auto
+		position: relative
+.address
+	@extend %clearfix
+	position: absolute
+	top: 10px
+	left: 350px
+	background: #fff
+	width: 56%
+	padding: 10px 0 50px
+	+tablet
+		position: static
+		width: 100%
+.add-con
+	@extend %clearfix
+	width: 80%
+	margin: 0 auto
+	+tablet
+		width: 88%
+	span,a 
+		padding: 35px 0 0 10%
+		+planshet
+			padding: 35px 33px 0 10%
+
+	&__box1
+		float: left
+		width: 50%
+	.icon-con1
+		display: block
+		position: relative
+		&::before
+			content: ''
+			background: url(../images/icon-contact.svg) 0 -78px no-repeat
+			position: absolute
+			background-size: 31px
+			top: 20px
+			left: 0
+			width: 50px
+			height: 50px
+			+planshet
+				left: -12px
+	a 
+		display: block
+		text-decoration: none
+		font-size: 1em
+		color: $color-fonts
+		text-align: left
+	+planshet
+		font-size: 0.9em
+.icon-con2
+	display: block
+	position: relative
+	&::before
+		content: ''
+		background: url(../images/icon-contact.svg) 0 -113px no-repeat
+		position: absolute
+		background-size: 31px
+		top: 28px
+		left: 0
+		width: 50px
+		height: 47px
+		+planshet
+			left: -12px
+.icon-con3
+	display: block
+	position: relative
+	&::before
+		content: ''
+		background: url(../images/icon-contact.svg) 0 -159px no-repeat
+		position: absolute
+		background-size: 31px
+		top: 19px
+		left: 0
+		width: 50px
+		height: 50px
+		+planshet
+			left: -12px
+.icon-con4
+	display: block
+	position: relative
+	&::before
+		content: ''
+		background: url(../images/icon-contact.svg) 0  -27px no-repeat
+		position: absolute
+		background-size: 31px
+		top: 23px
+		left: -20px
+		width: 50px
+		height: 44px
+.icon-con5
+	display: block
+	position: relative
+	&::before
+		content: ''
+		background: url(../images/icon-contact.svg) 0 14px no-repeat
+		position: absolute
+		background-size: 31px
+		top: 8px
+		left: -20px
+		width: 50px
+		height: 50px
+.icon-con6
+	display: block
+	position: relative
+	&::before
+		content: ''
+		background: url(../images/icon-contact.svg) 0 -183px no-repeat
+		position: absolute
+		background-size: 31px
+		top: 30px
+		left: -20px
+		width: 50px
+		height: 36px
+.footer
+	@extend %clearfix
+	background: #252525
+	padding: 0
+	+tablet
+		padding: 0
+	.footer__logo
+		float: left
+		width: 25%
+		+tablet
+			width: 100%
+			text-align: center
+		img
+			height: auto
+			margin: 10px
+	.footer__text
+		float: left
+		width: 70%
+		+tablet
+			float: none
+			width: 100%
+			margin-top: 30px
+		p 
+			color: #fff 
+			font-size: 13px
+			text-align: left
+			+tablet
+				font-size: 12px
+				padding: 0

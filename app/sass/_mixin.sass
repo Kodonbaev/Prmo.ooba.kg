@@ -1,0 +1,60 @@
+$fonts: 'Open Sans', sans-serif
+$bg-btn: #ffc000
+$color-fonts: #111720
+$color-conditions: #caa306
+$color-rates: #ff0000
+$color-header: #d7d7d7
+$color-hover: #eaa000
+
+%clearfix
+	&::after
+		content: ''
+		display: table
+		width: 100%
+		clear: both
+%btn
+	background: $bg-btn
+	text-align: center
+	display: inline-block
+	width: 400px
+	padding: 15px 0 18px
+	font:
+		size: 1.5em
+		famile: $fonts
+	color: $color-fonts
+	border-radius: 5px
+	&:hover
+		background: #000
+		color: $bg-btn
+		transition: all 0.3s
+
+%transformation
+	transform: skewY(2.7deg)
+	transform-origin: 100% 0
+	position: relative
+	z-index: -1
+	-webkit-box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.35)
+	-moz-box-shadow:    0px 8px 30px 0px rgba(0, 0, 0, 0.35)
+	box-shadow:         0px 8px 30px 0px rgba(0, 0, 0, 0.35)
+	
+
+=tablet
+	@media screen and (max-width: 1024px)
+		@content
+=planshet
+	@media screen and  (max-width: 768px)
+		@content
+=mobile
+	@media screen and  (max-width: 640px)
+		@content
+
+
+=placeholder
+	&::-webkit-input-placeholder
+		@content
+	&::-moz-placeholder
+		@content
+	&:-moz-placeholder
+		@content
+	&:-ms-input-placeholder
+		@content
