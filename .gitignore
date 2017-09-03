@@ -1,7 +1,4 @@
 .idea/*
 node_modules
 *.psd
-app/uploads
-app/images
-app/css
-app/fonts
+
